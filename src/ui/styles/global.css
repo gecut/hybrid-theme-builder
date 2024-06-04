@@ -1,0 +1,53 @@
+@import '@gecut/styles/css';
+
+app-index {
+  @apply flex flex-col h-full w-full overflow-hidden relative;
+}
+
+main[role='main'] {
+  position: initial;
+
+  @apply flex flex-col flex-1 overflow-hidden;
+}
+
+.gecut-page {
+  gap: var(--_gap, 8px);
+
+  @apply flex flex-col h-full bg-surface animate-gecut-appear;
+}
+
+.gecut-modal-page {
+  position: absolute;
+  inset: 0;
+
+  @apply absolute inset-0 z-modal gecut-page;
+}
+
+.scrollable {
+  scroll-behavior: smooth;
+  overflow-y: auto;
+}
+
+@keyframes gecut-appear {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-gecut-appear {
+  animation: gecut-appear 1s ease-out both;
+}
+
+:root {
+  --f: 1rem;
+}
+
+[hidden] {
+  display: none !important;
+}

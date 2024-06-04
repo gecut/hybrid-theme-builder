@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "eg2.vscode-npm-script",
+    "christian-kohler.npm-intellisense",
+    "ms-edgedevtools.vscode-edge-devtools",
+    "PWABuilder.pwa-studio",
+    "arcanis.vscode-zipfs",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "bradlc.vscode-tailwindcss",
+    "wmaurer.change-case",
+    "streetsidesoftware.code-spell-checker"
+  ]
+}

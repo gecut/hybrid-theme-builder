@@ -1,0 +1,11 @@
+{
+  "extends": "@alwatr/tsconfig-base",
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ES2020",
+    "moduleResolution": "Bundler",
+    "useDefineForClassFields": false,
+    "types": ["vite-plugin-pwa/client", "vite/client"]
+  },
+  "include": ["src/**/*.ts"]
+}
