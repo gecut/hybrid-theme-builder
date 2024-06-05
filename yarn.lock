@@ -3021,6 +3021,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"chroma.ts@npm:^1.0.10":
+  version: 1.0.10
+  resolution: "chroma.ts@npm:1.0.10"
+  checksum: 10c0/ea0bef0f301093a821c15b08f9b037825bb6c9a0cc4c0da24a16e7db6b219d88a58ca318acf06e7cd514b150fc54695c585c74491fb3573e3433517ba01d2db2
+  languageName: node
+  linkType: hard
+
 "clean-stack@npm:^2.0.0":
   version: 2.2.0
   resolution: "clean-stack@npm:2.2.0"
@@ -4508,6 +4515,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": "npm:7.8.0"
     "@typescript-eslint/parser": "npm:7.8.0"
     autoprefixer: "npm:^10.4.19"
+    chroma.ts: "npm:^1.0.10"
     cssnano: "npm:^7.0.1"
     cssnano-preset-advanced: "npm:^7.0.1"
     eslint: "npm:8.57.0"

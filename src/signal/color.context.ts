@@ -1,7 +1,7 @@
 import {ContextSignal} from '@gecut/signal';
 import debounce from '@gecut/utilities/debounce.js';
 import json from '@gecut/utilities/local-storage-json.js';
-import {hexFromArgb, argbFromRgb} from '@material/material-color-utilities';
+import * as chroma from 'chroma.ts';
 
 import {themeContext} from './theme.context.js';
 
@@ -21,10 +21,7 @@ colorContext.setValue({
 
 colorContext.subscribe(
   debounce((color: HSLColor) => {
-    const rgb = hslToRgb(Number(color.hue), Number(color.saturation), Number(color.lightness));
-    const argb = argbFromRgb(rgb.red, rgb.green, rgb.blue);
-    const hex = hexFromArgb(argb);
-
+    const hex = chroma.hsl(Number(color.hue), Number(color.saturation) / 100, Number(color.lightness) / 100).hex('rgb');
     themeContext.setValue(hex);
 
     json.set('HTB.HUE', color.hue);
@@ -36,45 +33,3 @@ colorContext.subscribe(
     receivePrevious: true,
   },
 );
-
-function hslToRgb(hue: number, saturation: number, lightness: number) {
-  hue = hue % 360; // Ensure hue is in the range of 0 to 360
-  const chroma = saturation * Math.min(lightness, 1 - lightness);
-  const huePrime = hue / 60;
-  const x = chroma * (1 - Math.abs((huePrime % 2) - 1));
-  let red = 0,
-    green = 0,
-    blue = 0;
-
-  if (huePrime >= 0 && huePrime < 1) {
-    red = chroma;
-    green = x;
-  }
-  else if (huePrime >= 1 && huePrime < 2) {
-    red = x;
-    green = chroma;
-  }
-  else if (huePrime >= 2 && huePrime < 3) {
-    green = chroma;
-    blue = x;
-  }
-  else if (huePrime >= 3 && huePrime < 4) {
-    green = x;
-    blue = chroma;
-  }
-  else if (huePrime >= 4 && huePrime < 5) {
-    red = x;
-    blue = chroma;
-  }
-  else if (huePrime >= 5 && huePrime < 6) {
-    red = chroma;
-    blue = x;
-  }
-
-  const m = lightness - 0.5 * chroma;
-  red = Math.round((red + m) * 255);
-  green = Math.round((green + m) * 255);
-  blue = Math.round((blue + m) * 255);
-
-  return {red, green, blue};
-}

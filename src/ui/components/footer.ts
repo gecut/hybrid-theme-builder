@@ -1,10 +1,11 @@
 import {gecutContext} from '@gecut/lit-helper/directives/context.js';
 import debounce from '@gecut/utilities/debounce.js';
+import {hexFromArgb} from '@material/material-color-utilities';
 import {styleMap} from 'lit/directives/style-map.js';
 import {html} from 'lit/html.js';
 
 import {colorContext} from '../../signal/color.context.js';
-import {themeContext} from '../../signal/theme.context.js';
+import {paletteContext} from '../../signal/palette.context.js';
 
 const colorPickerChange = debounce((event: InputEvent) => {
   const target = event.target as HTMLInputElement;
@@ -25,7 +26,7 @@ export function footer() {
 
   return html`
     <footer class="fixed bottom-0 inset-x-0 bg-surfaceContainer translucent flex flex-col p-4">
-      <div class="max-w-screen-sm w-full mx-auto flex justify-center items-center gap-4">
+      <div class="max-w-screen-lg w-full mx-auto flex justify-center items-center gap-4">
         <div class="flex flex-col gap-4">
           <span>Hue:</span>
           <span>Saturation:</span>
@@ -80,12 +81,12 @@ export function footer() {
             `,
           )}
           ${gecutContext(
-            themeContext,
-            (theme) => html`
+            paletteContext,
+            (palette) => html`
               <div
                 class="p-2 w-20 text-center rounded-full shadow-md"
                 style=${styleMap({
-                  backgroundColor: `${theme}`,
+                  backgroundColor: `${hexFromArgb(palette.source)}`,
                 })}
               >
                 Material

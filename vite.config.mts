@@ -3,6 +3,7 @@ import {VitePWA} from 'vite-plugin-pwa';
 import Unfonts from 'unplugin-fonts/vite';
 import {workboxConfig} from './scripts/workbox.config.mts';
 import {getYarnCachePath} from './scripts/yarn-cache.config.mts';
+import {description} from './package.json';
 
 export default defineConfig(async ({command, mode}) => {
   const yarnCachePath = await getYarnCachePath();
@@ -36,7 +37,7 @@ export default defineConfig(async ({command, mode}) => {
           start_url: '/',
           short_name: 'HTB',
           theme_color: '#d84113',
-          description: 'Hybrid Theme Builder',
+          description,
           orientation: 'portrait',
           background_color: '#d84113',
           icons: [

@@ -1,6 +1,6 @@
 import {map} from '@gecut/lit-helper/utilities/map.js';
 import clipboard from '@gecut/utilities/clipboard.js';
-import {argbFromHex, hexFromArgb, themeFromSourceColor} from '@material/material-color-utilities';
+import {hexFromArgb, type Theme} from '@material/material-color-utilities';
 import {html} from 'lit/html.js';
 
 const capitalize = (str: string) => {
@@ -38,9 +38,10 @@ const colors = {
   'on surface variant': 'bg-onSurfaceVariant text-surfaceVariant',
 } as const;
 
-export function palettePage(sourceColor: string, mode: 'light' | 'dark') {
-  const theme = themeFromSourceColor(argbFromHex(sourceColor));
-
+export function paletteSystemColors(
+  theme: Theme,
+  mode: 'light' | 'dark' = document.documentElement.classList.contains('color-scheme-dark') ? 'dark' : 'light',
+) {
   return html`
     <div class="flex flex-wrap">
       ${map(null, Object.keys(colors) as (keyof typeof colors)[], (color: keyof typeof colors) => {

@@ -1,5 +1,6 @@
 {
   "name": "hybrid-theme-builder",
+  "description": "A theme builder for Hybrid UI, allowing developers to create custom themes for their applications.",
   "type": "module",
   "prettier": "@alwatr/prettier-config",
   "eslintConfig": {
@@ -44,6 +45,7 @@
     "@typescript-eslint/eslint-plugin": "7.8.0",
     "@typescript-eslint/parser": "7.8.0",
     "autoprefixer": "^10.4.19",
+    "chroma.ts": "^1.0.10",
     "cssnano": "^7.0.1",
     "cssnano-preset-advanced": "^7.0.1",
     "eslint": "8.57.0",

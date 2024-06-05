@@ -13,7 +13,7 @@ document.documentElement.classList.add('color-scheme-light');
 render(
   html`
     ${header()}
-    <main role="main" class="w-full py-20 px-4">${gecutContext(routerContext, (page) => page)}</main>
+    <main role="main" class="w-full pt-20 pb-32 px-4">${gecutContext(routerContext, (page) => page)}</main>
     ${footer()}
   `,
   document.body,
