@@ -1752,18 +1752,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@gecut/components@npm:^2.3.0":
-  version: 2.3.0
-  resolution: "@gecut/components@npm:2.3.0"
+"@gecut/components@npm:^2.3.2":
+  version: 2.3.2
+  resolution: "@gecut/components@npm:2.3.2"
   dependencies:
-    "@gecut/lit-helper": "npm:^2.1.3"
-    "@gecut/logger": "npm:^1.4.2"
-    "@gecut/signal": "npm:^2.1.2"
-    "@gecut/types": "npm:^2.2.0"
-    "@gecut/utilities": "npm:^5.2.1"
+    "@gecut/lit-helper": "npm:^2.1.5"
+    "@gecut/logger": "npm:^1.4.3"
+    "@gecut/signal": "npm:^2.2.1"
+    "@gecut/types": "npm:^2.2.1"
+    "@gecut/utilities": "npm:^5.3.0"
     "@types/node": "npm:^20.11.30"
     lit: "npm:^3.1.3"
-  checksum: 10c0/ab4c7a1d91d9f0aa46ebec3ca87347c53fe9e85cbe43fbc827bbe7cdb7e616fccbb20978f9dcaf1ac60acbc041162251bc286d1d4c5488ce7ad3348b0318fa63
+  checksum: 10c0/d4ef511b4ae2947c8aaf5bc8ee940fbd66bc657eb6266faabb0dddc9375b3f1305c452e5f7176ea3377b641c7511fb91b11bb89ac011629fe55a8e765701a85a
   languageName: node
   linkType: hard
 
@@ -1779,35 +1779,35 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@gecut/i18n@npm:^2.0.4":
-  version: 2.0.4
-  resolution: "@gecut/i18n@npm:2.0.4"
+"@gecut/i18n@npm:^2.0.6":
+  version: 2.0.6
+  resolution: "@gecut/i18n@npm:2.0.6"
   dependencies:
-    "@gecut/logger": "npm:^1.4.2"
-    "@gecut/signal": "npm:^2.1.2"
-    "@gecut/types": "npm:^2.2.0"
+    "@gecut/logger": "npm:^1.4.3"
+    "@gecut/signal": "npm:^2.2.1"
+    "@gecut/types": "npm:^2.2.1"
     type-fest: "npm:^4.13.0"
-  checksum: 10c0/3c1b970d64d284e3352c6881ec48c272a5d1d266daa612e90692f5f51a67a960c9bc11d04e0dc4e19b0a2140f2a71abea43201ea8bb64e5b8ace905a43307c76
+  checksum: 10c0/e9e2d553742711568b6736250b67ef5fc2cdbd66c6d688079f8f8ec4fbed7323a9a298068398fbae6d8e905eefcbf67cedb91a867c3a9cf6edf5627c371a486f
   languageName: node
   linkType: hard
 
-"@gecut/lit-helper@npm:^2.1.3":
-  version: 2.1.3
-  resolution: "@gecut/lit-helper@npm:2.1.3"
+"@gecut/lit-helper@npm:^2.1.5":
+  version: 2.1.5
+  resolution: "@gecut/lit-helper@npm:2.1.5"
   dependencies:
     "@gecut/data-manager": "npm:^1.2.3"
-    "@gecut/logger": "npm:^1.4.2"
-    "@gecut/mixins": "npm:^2.1.2"
-    "@gecut/signal": "npm:^2.1.2"
-    "@gecut/types": "npm:^2.2.0"
-    "@gecut/utilities": "npm:^5.2.1"
+    "@gecut/logger": "npm:^1.4.3"
+    "@gecut/mixins": "npm:^2.1.4"
+    "@gecut/signal": "npm:^2.2.1"
+    "@gecut/types": "npm:^2.2.1"
+    "@gecut/utilities": "npm:^5.3.0"
     "@material/web": "npm:^1.4.1"
     "@vaadin/router": "npm:^1.7.5"
     lit: "npm:^3.1.3"
     lit-html: "npm:^3.1.2"
     tslib: "npm:^2.6.2"
     type-fest: "npm:^4.13.0"
-  checksum: 10c0/48745c2565beab1971b656a36abe3611ff5251644c32f4c037feb4772eac55a1a97879da8533a2134216bbdf08d7de4e40b30c3252f0654e10659ec33fd0db60
+  checksum: 10c0/1e1c71a24d58213a7dbe706af35bd80c055d4f12db83f8b8fec009dda87588f156bbfcdbe92cdbd9b623f9b4995489e483e00145a5d834b329e2dffddb6c2fee
   languageName: node
   linkType: hard
 
@@ -1820,35 +1820,36 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@gecut/logger@npm:^1.4.2":
-  version: 1.4.2
-  resolution: "@gecut/logger@npm:1.4.2"
+"@gecut/logger@npm:^1.4.3, @gecut/logger@npm:^1.4.4":
+  version: 1.4.4
+  resolution: "@gecut/logger@npm:1.4.4"
   dependencies:
-    "@gecut/utilities": "npm:^5.2.1"
-  checksum: 10c0/c8ced904afb50b1612b2e79691da29de1d417941db8b763e6e48ce0c08bd58aa8021ea62d633a4d6246b1a45cfc7c8edca3ed28e27f253f7a2b2100bdda6cd01
+    "@gecut/utilities": "npm:^5.4.0"
+  checksum: 10c0/55ddd2f0132a96d855607bf2d85e863e6309a2e8b0bff2f94fcec8823d0f4f6f3ee81dd233db190e904f5d16cdf23bd561d9d05e0df85d0b96ce351f3bc707e4
   languageName: node
   linkType: hard
 
-"@gecut/mixins@npm:^2.1.2":
-  version: 2.1.2
-  resolution: "@gecut/mixins@npm:2.1.2"
+"@gecut/mixins@npm:^2.1.4":
+  version: 2.1.4
+  resolution: "@gecut/mixins@npm:2.1.4"
   dependencies:
-    "@gecut/logger": "npm:^1.4.2"
-    "@gecut/signal": "npm:^2.1.2"
-    "@gecut/types": "npm:^2.2.0"
-    "@gecut/utilities": "npm:^5.2.1"
+    "@gecut/logger": "npm:^1.4.3"
+    "@gecut/signal": "npm:^2.2.1"
+    "@gecut/types": "npm:^2.2.1"
+    "@gecut/utilities": "npm:^5.3.0"
     lit: "npm:^3.1.3"
-  checksum: 10c0/42e9a2f6e34ab150c2a56a5dc516d290ab10745c65572144a98b29c443fda47ee35a3a0526fe9cd50497f55f66d4771fabb759266d66aee89b0537e484dc0260
+  checksum: 10c0/fb1c796fcff1114fd5881a6b704f26d56e064fd28329cbf244f080b26df92cde1cb6066b697dc0e79f862ad014943b1ba360eacc61b2d1da9640d289f314eb8f
   languageName: node
   linkType: hard
 
-"@gecut/signal@npm:^2.1.2":
-  version: 2.1.2
-  resolution: "@gecut/signal@npm:2.1.2"
+"@gecut/signal@npm:^2.2.1, @gecut/signal@npm:^2.2.2":
+  version: 2.2.2
+  resolution: "@gecut/signal@npm:2.2.2"
   dependencies:
-    "@gecut/logger": "npm:^1.4.2"
-    "@gecut/types": "npm:^2.2.0"
-  checksum: 10c0/a76b7d42a88bedbcb368bc3f7ed3b7e298a1ab8c857166365c1ffc36bbc438d242c975789f474165fb7ef3f689a8779e35a6cdd27ea0398cea4217d104063257
+    "@gecut/logger": "npm:^1.4.4"
+    "@gecut/types": "npm:^2.2.1"
+    "@gecut/utilities": "npm:^5.4.0"
+  checksum: 10c0/c40cf932c21cbb411c6cbbaa7d583959f500e144c1563a85bf6b4e58b237fdb0dadacf5a038e2129bfda6bc4da2026901f63534cb491e8a62be501ab0cd851af
   languageName: node
   linkType: hard
 
@@ -1871,10 +1872,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@gecut/types@npm:^2.2.0":
-  version: 2.2.0
-  resolution: "@gecut/types@npm:2.2.0"
-  checksum: 10c0/52b61eaaafb220976892ef47743cf601538b5fc811005993ab10c5a20307d4cbed3241117fa82840e6eaecb96351ae17331d13900ea5a48d4161f9323ff2d9c7
+"@gecut/types@npm:^2.2.1":
+  version: 2.2.1
+  resolution: "@gecut/types@npm:2.2.1"
+  checksum: 10c0/11c021fa3749003ebde51f2cb22d19a277db1097a508e2044b73eca3607b1376a44972c88fa446dd6943a5dc502dafc803a319b80905b0ec62aa01c8c3da996e
   languageName: node
   linkType: hard
 
@@ -1887,12 +1888,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@gecut/utilities@npm:^5.2.1":
-  version: 5.2.1
-  resolution: "@gecut/utilities@npm:5.2.1"
+"@gecut/utilities@npm:^5.3.0, @gecut/utilities@npm:^5.4.0":
+  version: 5.4.0
+  resolution: "@gecut/utilities@npm:5.4.0"
   dependencies:
-    "@gecut/types": "npm:^2.2.0"
-  checksum: 10c0/bed573b0562bf04cb510bdec73698343ebaf478c4b8f3ab708ec8edd777c2ccd6f625413a25cde66e05f32531f3de9470d2a8b5c6aa84c5d0a44eb1f935f04f0
+    "@gecut/types": "npm:^2.2.1"
+    change-case: "npm:^5.4.4"
+  checksum: 10c0/53871a09808924c454a81771bad1c468629d0bf6fac6f02134f62a9fe43c9c1cfa88f69a39d3e1146fc51e501e7780259680bf32b559376979d1807dc5ad6ad2
   languageName: node
   linkType: hard
 
@@ -2992,6 +2994,13 @@ __metadata:
     ansi-styles: "npm:^4.1.0"
     supports-color: "npm:^7.1.0"
   checksum: 10c0/4a3fef5cc34975c898ffe77141450f679721df9dde00f6c304353fa9c8b571929123b26a0e4617bde5018977eb655b31970c297b91b63ee83bb82aeb04666880
+  languageName: node
+  linkType: hard
+
+"change-case@npm:^5.4.4":
+  version: 5.4.4
+  resolution: "change-case@npm:5.4.4"
+  checksum: 10c0/2a9c2b9c9ad6ab2491105aaf506db1a9acaf543a18967798dcce20926c6a173aa63266cb6189f3086e3c14bf7ae1f8ea4f96ecc466fcd582310efa00372f3734
   languageName: node
   linkType: hard
 
@@ -4500,14 +4509,14 @@ __metadata:
     "@alwatr/prettier-config": "npm:^1.0.4"
     "@alwatr/tsconfig-base": "npm:^1.1.2"
     "@fontsource/varela-round": "npm:^5.0.13"
-    "@gecut/components": "npm:^2.3.0"
-    "@gecut/i18n": "npm:^2.0.4"
-    "@gecut/lit-helper": "npm:^2.1.3"
-    "@gecut/mixins": "npm:^2.1.2"
-    "@gecut/signal": "npm:^2.1.2"
+    "@gecut/components": "npm:^2.3.2"
+    "@gecut/i18n": "npm:^2.0.6"
+    "@gecut/lit-helper": "npm:^2.1.5"
+    "@gecut/mixins": "npm:^2.1.4"
+    "@gecut/signal": "npm:^2.2.2"
     "@gecut/styles": "npm:^2.3.1"
-    "@gecut/types": "npm:^2.2.0"
-    "@gecut/utilities": "npm:^5.2.1"
+    "@gecut/types": "npm:^2.2.1"
+    "@gecut/utilities": "npm:^5.4.0"
     "@material/material-color-utilities": "npm:^0.2.7"
     "@thepassle/app-tools": "npm:^0.9.12"
     "@types/eslint": "npm:8.56.10"
