@@ -59,7 +59,7 @@ export function header() {
             events: {
               click: async (event) => {
                 const target = event.target as HTMLElement;
-                const color = colorContext.getValue();
+                const color = colorContext.value;
 
                 if (!color) return;
 
@@ -86,7 +86,7 @@ export function header() {
                 const target = event.target as HTMLElement;
                 const download = () =>
                   new Promise<void>((resolve) => {
-                    const fileName = 'h' + Math.ceil(Hct.fromInt(argbFromHex(themeContext.getValue() ?? '#000')).hue) + '.css';
+                    const fileName = 'h' + Math.ceil(Hct.fromInt(argbFromHex(themeContext.value ?? '#000')).hue) + '.css';
 
                     const a = document.createElement('a'); // Create "a" element
                     const blob = new Blob([':root{', document.documentElement.getAttribute('style') ?? '', '}'], {

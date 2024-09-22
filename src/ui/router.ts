@@ -55,8 +55,8 @@ export function resolveRouterPath(unresolvedPath?: string) {
 }
 
 export const debouncedRender = debounce(() => {
-  routerContext.setValue(router.render());
-  titleContext.setValue(router.context.title);
+  routerContext.value = router.render();
+  titleContext.value = router.context.title;
 }, 1000 / 60);
 
 router.addEventListener('route-changed', debouncedRender);

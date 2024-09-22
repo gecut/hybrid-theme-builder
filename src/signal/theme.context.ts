@@ -12,5 +12,5 @@ themeContext.subscribe((sourceColor) => {
     document.documentElement.style.setProperty(key, color);
   }
 
-  paletteContext.setValue(themeFromSourceColor(argbFromHex(sourceColor)));
+  paletteContext.value = themeFromSourceColor(argbFromHex(sourceColor));
 });

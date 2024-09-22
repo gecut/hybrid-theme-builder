@@ -1,3 +1,3 @@
 import 'unfonts.css';
 
-import './ui/app-index';
+import './ui/app-index.js';

@@ -13,16 +13,16 @@ const lightness = params.get('l');
 export type HSLColor = {hue: string; saturation: string; lightness: string};
 export const colorContext = new ContextSignal<HSLColor>('color');
 
-colorContext.setValue({
+colorContext.value = {
   hue: hue ?? json.get('HTB.HUE', '0'),
   saturation: saturation ?? json.get('HTB.SATURATION', '0'),
   lightness: lightness ?? json.get('HTB.LIGHTNESS', '0'),
-});
+};
 
 colorContext.subscribe(
   debounce((color: HSLColor) => {
     const hex = chroma.hsl(Number(color.hue), Number(color.saturation) / 100, Number(color.lightness) / 100).hex('rgb');
-    themeContext.setValue(hex);
+    themeContext.value = hex;
 
     json.set('HTB.HUE', color.hue);
     json.set('HTB.SATURATION', color.saturation);

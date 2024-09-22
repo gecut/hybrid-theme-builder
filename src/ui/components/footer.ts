@@ -10,19 +10,19 @@ import {paletteContext} from '../../signal/palette.context.js';
 const colorPickerChange = debounce((event: InputEvent) => {
   const target = event.target as HTMLInputElement;
 
-  const color = colorContext.getValue();
+  const color = colorContext.value;
 
-  colorContext.setValue({
+  colorContext.value = {
     hue: '0',
     lightness: '0',
     saturation: '0',
     ...color,
     [target.name]: target.value.toString(),
-  });
+  };
 }, 1000 / 60);
 
 export function footer() {
-  const color = colorContext.getValue();
+  const color = colorContext.value;
 
   return html`
     <footer class="fixed bottom-0 inset-x-0 bg-surfaceContainer translucent flex flex-col p-4">
